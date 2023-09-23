@@ -1,14 +1,13 @@
 import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./styles/defaultTheme";
 
-import { StandingTable } from "./components/StandingTable";
 import { GlobalStyle } from "./styles/global";
+import { defaultTheme } from "./styles/defaultTheme";
+import { HomePage } from "./pages/Home";
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <h1>olá</h1>
-      <StandingTable />
+      <HomePage />
 
       <GlobalStyle />
     </ThemeProvider>
