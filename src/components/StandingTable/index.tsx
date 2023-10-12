@@ -1,5 +1,5 @@
 import { TableSubTitle } from "./Subtitles/Subtitles";
-import { TableWrapper, InfosLeagueWrapper, Table, FormInfo } from "./style";
+import { TableWrapper, Table, FormInfo } from "./style";
 
 const data = [
   {
@@ -307,12 +307,6 @@ const data = [
 export function StandingTable() {
   return (
     <TableWrapper>
-      <InfosLeagueWrapper>
-        <h3>logo da liga</h3>
-        <h1>Premier League</h1>
-        <span>bandeira do país da liga</span>
-      </InfosLeagueWrapper>
-
       <Table>
         <thead>
           <tr>
