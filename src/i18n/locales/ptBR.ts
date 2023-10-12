@@ -1,0 +1,25 @@
+export default {
+  table: {
+    club: "Clube",
+    points: "Pontos",
+    played: "Jogos",
+    won: "Vitória",
+    drawn: "Empate",
+    lost: "Derrota",
+    goalsFor: "Gols Pró",
+    goalsAgains: "Gols Contra",
+    goalsDifference: "Saldo de Gols",
+    form: "Sequência",
+    nextMatch: "Próxima Partida",
+  },
+  playerStatistics: {
+    topScorer: "Artilheiro",
+    topAssister: "Garçom",
+    topRedCards: "Mais vermelhos",
+    topYellowCards: "Mais amarelos",
+    goals: "Gols",
+    assists: "Assistências",
+    cards: "Cartões",
+    playerAge: "anos",
+  },
+};
