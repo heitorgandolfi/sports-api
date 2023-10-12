@@ -1,3 +1,5 @@
+import i18n from "../../i18n/locales";
+
 import {
   Container,
   Content,
@@ -36,7 +38,9 @@ export const PlayerStatistics = ({
         <Content>
           <div>
             <h2>{playerName}</h2>
-            <h4>{playerAge} yo</h4>
+            <h4>
+              {playerAge} {i18n.t("playerStatistics.playerAge")}
+            </h4>
           </div>
           <SeasonPlayerStatistics>
             <div>

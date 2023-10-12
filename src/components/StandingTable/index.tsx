@@ -1,4 +1,6 @@
+import i18n from "../../i18n/locales";
 import { TableSubTitle } from "./Subtitles/Subtitles";
+
 import { TableWrapper, Table, FormInfo } from "./style";
 
 const data = [
@@ -311,17 +313,17 @@ export function StandingTable() {
         <thead>
           <tr>
             <th>#</th>
-            <th>Team</th>
-            <th>PTS</th>
-            <th>P</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>GF</th>
-            <th>GA</th>
-            <th>GD</th>
-            <th>Form</th>
-            <th>Next Match</th>
+            <th>{i18n.t("table.club")}</th>
+            <th>{i18n.t("table.points")}</th>
+            <th>{i18n.t("table.played")}</th>
+            <th>{i18n.t("table.won")}</th>
+            <th>{i18n.t("table.drawn")}</th>
+            <th>{i18n.t("table.lost")}</th>
+            <th>{i18n.t("table.goalsFor")}</th>
+            <th>{i18n.t("table.goalsAgains")}</th>
+            <th>{i18n.t("table.goalsDifference")}</th>
+            <th>{i18n.t("table.form")}</th>
+            <th>{i18n.t("table.nextMatch")}</th>
           </tr>
         </thead>
         <tbody>

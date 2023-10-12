@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useStore } from "effector-react";
+import i18n from "../../i18n/locales";
 
 import { Fixtures } from "../../components/Fixtures";
 import { PlayerStatistics } from "../../components/PlayerStatistics";
@@ -80,47 +81,47 @@ export const HomePage = () => {
         <StandingTable />
         <Fixtures />
       </ContentWrapper>
-      
+
       <PlayersStatisticsWrapper>
         <PlayerStatistics
-          sectionName="Top Scores"
+          sectionName={i18n.t("playerStatistics.topScorer")}
           playerImgUrl={playerPhotoTopScorer}
           playerName={playerNameTopScorer}
           playerAge={playerAgeTopScorer}
           playerPosition={playerPositionTopScorer}
           playerTeamLogo={playerTeamLogoTopScorer}
           playerStatistic={playerGoalsTopScorer}
-          statisticName="goals"
+          statisticName={i18n.t("playerStatistics.goals")}
         />
         <PlayerStatistics
-          sectionName="Top Assists"
+          sectionName={i18n.t("playerStatistics.topAssister")}
           playerImgUrl={playerPhotoTopAssister}
           playerName={playerNameTopAssister}
           playerAge={playerAgeTopAssister}
           playerPosition={playerPositionTopAssister}
           playerTeamLogo={playerTeamLogoTopAssister}
           playerStatistic={playerAssistsTopAssister}
-          statisticName="assists"
+          statisticName={i18n.t("playerStatistics.assists")}
         />
         <PlayerStatistics
-          sectionName="Top Red Cards"
+          sectionName={i18n.t("playerStatistics.topRedCards")}
           playerImgUrl={playerPhotoTopRedCards}
           playerName={playerNameTopRedCards}
           playerAge={playerAgeTopRedCards}
           playerPosition={playerPositionTopRedCards}
           playerTeamLogo={playerTeamLogoTopRedCards}
           playerStatistic={playerCardsTopRedCards}
-          statisticName="cards"
+          statisticName={i18n.t("playerStatistics.cards")}
         />
         <PlayerStatistics
-          sectionName="Top Yellow Cards"
+          sectionName={i18n.t("playerStatistics.topYellowCards")}
           playerImgUrl={playerPhotoTopYellowCards}
           playerName={playerNameTopYellowCards}
           playerAge={playerAgeTopYellowCards}
           playerPosition={playerPositionTopYellowCards}
           playerTeamLogo={playerTeamLogoTopYellowCards}
           playerStatistic={playerCardsTopYellowCards}
-          statisticName="cards"
+          statisticName={i18n.t("playerStatistics.cards")}
         />
       </PlayersStatisticsWrapper>
     </Container>
